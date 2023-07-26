@@ -26,7 +26,7 @@ jobs:
         run: flutter pub upgrade
 
       - name: Flutter build web
-        run: flutter build web --web-renderer canvaskit
+        run: flutter build web
 
       - name: Release the documentation
         uses: crazy-max/ghaction-github-pages@v3
