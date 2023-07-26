@@ -27,6 +27,9 @@ jobs:
 
       - name: Flutter build web
         run: flutter build web
+        
+      - name: Add correct url
+        run: sed -i 's#<base href="/">#<base href="/flutter-website-loader-example/">#' build/web/index.html
 
       - name: Release the documentation
         uses: crazy-max/ghaction-github-pages@v3
